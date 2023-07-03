@@ -3,3 +3,4 @@ const b ='secret ';
 const user='admin';
 const password='admin'; 
 //new stuff
+alert(1)
